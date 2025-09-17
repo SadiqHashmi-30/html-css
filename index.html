@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Flexbox Menu</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .flex-menu {
+      display: flex;
+      background-color: #282A35;
+      overflow-x: auto;
+      white-space: nowrap;
+      position: fixed;
+    }
+
+    .flex-menu a {
+      padding: 14px 20px;
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      display: inline-block;
+      transition: background 0.3s;
+    }
+
+    .flex-menu a:hover {
+      background-color: #575c66;
+    }
+
+    .flex-menu a.active {
+      background-color: #04AA6D;
+      color: white;
+    }
+
+        
+    header{
+        display: flex;
+      justify-content: space-between;
+        align-items: center;
+        padding-left: 10px;
+    font-size: larger;
+    }
+    li{
+        list-style-type: none;
+        display: flex;
+         display: inline;
+        margin-left: 10px;
+
+    }
+    #links a{
+         text-decoration: none;
+        color: black;
+     
+       justify-content: space-between;
+        padding: 10px;
+    }
+    #links a:hover{
+        background-color: #04AA6D;
+        color: white;
+    }
+  input{
+        border-radius: 10px;
+        background-color: rgb(255, 255, 255);
+        width: 100px;
+        height: 30px;
+        margin-left: 30px;
+    }
+    button{
+        width: 100px;
+        height: 50px;
+        padding: 5px;
+        background-color:#04AA6D;
+        color: white;
+        border-radius: 5px;
+        margin-left: 40px;
+    }
+    .box a:hover{
+       
+        background-color:#13b67a;
+        color: white;
+       padding: 5px;
+    }
+    #search li,a{
+        text-decoration: none;
+           color: black;
+     
+       justify-content: space-between;
+        padding: 10px;
+    }
+    #search li,a:hover{
+      background-color: #f7f7f7;
+      color: #000000;
+      border-radius: 0px;
+    }
+   
+    .height{
+      width: 200px;
+      height: 90vh;
+      border: 1px solid  #e4e4e4;
+      background-color:  #e4e4e4;
+      overflow: scroll;
+      padding-right: 10px;
+      justify-content: space-around;
+      position: fixed;
+      margin-top: 0px;
+    
+    }
+  h2{
+    text-align: center;
+  }
+  .main{
+    margin-left: 200px;
+    background-color:  #84f3ca;
+    margin-top: 46px;
+  }
+
+  </style>
+</head>
+<body>
+
+     <header>
+        <div id="logo">
+            <img src="download (1).png" alt=""  width="50px">
+        </div>
+        <div id="links">
+        <li  ><a href="#">Tutorials</a></li>
+        <li ><a href="#">Refrences</a></li>
+        <li ><a href="#">get certificats</a></li>
+        <li ><a href="#">home</a></li>
+    </div>
+    <div id="search"> <input type="search" placeholder=" search"></div>
+    <ul>
+    <li ><a href="#">  For Teacher</a></li>
+    <li ><a href="#">Upgrade</a></li>
+    <li ><a href="#">Get Certificate</a></li></ul>
+    <div class="box">
+    <button> <a href="ABOUT.HTML"><i class="fa-solid fa-user" > </i>sign In </a></button></div> 
+    </header>
+
+
+  <div class="flex-menu">
+    <a href="#">HTML</a>
+    <a href="#" class="active">CSS</a>
+    <a href="#">JAVASCRIPT</a>
+    <a href="#">SQL</a>
+    <a href="#">PYTHON</a>
+    <a href="#">JAVA</a>
+    <a href="#">PHP</a>
+    <a href="#">HOW TO</a>
+    <a href="#">W3.CSS</a>
+    <a href="#">C</a>
+    <a href="#">C++</a>
+    <a href="#">C#</a>
+    <a href="#">BOOTSTRAP</a>
+    <a href="#">REACT</a>
+    <a href="#">MYSQL</a>
+    <a href="#">JQUERY</a>
+  </div>
+
+  <div class="bar">
+    <div class="height">
+      <h2>CSS Turtorials</h2>
+      <ul>
+        
+      <li> <a class="head"  href="#">CssIntroduction</a> </li>
+      <li> <a class="head" href="#">Css Syntax</a> </li>
+      <li> <a class="head" href="#">Css Selector</a> </li>
+      <li> <a class="head" href="#">Css How To </a> </li>
+      <li> <a class="head" href="#">Css Comments</a> </li>
+      <li> <a class="head" href="#">Css Errors</a> </li>
+      <li> <a class="head" href="#">Css Colors</a> </li>
+      <li> <a class="head" href="#">CssBackgrounds</a> </li>
+      <li> <a class="head" href="#">Css Borders</a> </li>
+      <li> <a class="head" href="#">Css Matgins</a> </li>
+      <li> <a class="head" href="#">Css Paddings</a> </li>
+      <li> <a class="head" href="#">CssHeight/Width</a> </li>
+      <li> <a class="head" href="#">Css Box Modes</a> </li>
+      <li> <a class="head" href="#">Css outlines</a> </li>
+      <li> <a class="head" href="#">Css Text</a> </li>
+      <li> <a class="head" href="#">CssFonts</a> </li>
+      <li> <a class="head" href="#">Css Icons</a> </li>
+      <li> <a class="head" href="#">Css Links</a> </li>
+      <li> <a class="head" href="#">Css Lists</a> </li>
+      <li> <a class="head" href="#">CssTables</a> </li>
+      <li> <a class="head" href="#">Css Display</a> </li>
+      <li> <a class="head" href="#">Css Max-Width</a> </li>
+      <li> <a class="head" href="#">Css Positions</a> </li>
+      <li> <a class="head" href="#">Css Z-Index</a> </li>
+      <li> <a class="head" href="#">Css Owerflow</a> </li>
+      <li> <a class="head" href="#">Css Float</a> </li>
+      <li> <a class="head" href="#">Css Inline-block</a> </li>
+      <li> <a class="head" href="#">Css Forms</a>
+      <li> <a class="head" href="#">Css Forms</a> </li>
+      <li> <a class="head" href="#">Css Forms</a> </li>
+      <li> <a class="head" href="#">Css Forms</a> </li>
+      <li> <a class="head" href="#">Css Forms</a> </li>
+      <li> <a class="head" href="#">Css Forms</a> </li>
+      <li> <a class="head" href="#">Css Forms</a> </li>
+      <li> <a class="head" href="#">Css Forms</a> </li>
+      <li> <a class="head" href="#">Css Forms</a> </li>
+      <li> <a class="head" href="#">Css Forms</a> </li>
+      <li> <a class="head" href="#">Css Forms</a> </li>
+      <li> <a class="head" href="#">Css Forms</a> </li>
+      <li> <a class="head" href="#">Css Forms</a> </li>
+      <li> <a class="head" href="#">Css Forms</a> </li>
+      <li> <a class="head" href="#">Css Forms</a> </li>
+      <li> <a class="head" href="#">Css Forms</a> </li>
+      <li> <a class="head" href="#">Css Forms</a> </li>
+      <li> <a class="head" href="#">Css Forms</a> </li>
+      <li> <a class="head" href="#">Css Forms</a> </li>
+      <li> <a class="head" href="#">Css Forms</a> </li>
+      <li> <a class="head" href="#">Css Forms</a> </li>
+      <li> <a class="head" href="#">Css Forms</a> </li>
+      <li> <a class="head" href="#">Css Forms</a> </li>
+      </ul>
+    </div>
+   <main class="main">
+   
+    <h2>CSS TUTORIALS</h2>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis molestiae commodi voluptas ipsam! Provident eum qui delectus veniam, natus, sapiente esse debitis tenetur ullam velit molestiae! Nisi, ullam! Blanditiis, corrupti.</p>
+    <br>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates corporis deleniti voluptate corrupti veritatis at. Possimus, amet. Ipsam exercitationem ab error repellendus dolorem sunt commodi, odit labore itaque, minus possimus!</p>
+   <br>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus dolorum accusamus sint a soluta. Odit eligendi, nostrum nobis exercitationem inventore, molestiae alias, rem doloribus officiis nemo mollitia. Totam tenetur laudantium nam culpa saepe repudiandae eveniet minima nostrum corporis. Magni error ipsum reiciendis esse itaque nesciunt, nisi at suscipit nulla asperiores odit aut amet perspiciatis voluptatibus eum distinctio rerum debitis reprehenderit laborum. Dolor dolorum mollitia, exercitationem, beatae earum nesciunt, unde accusamus officia doloremque minus accusantium magni debitis neque cumque. Quibusdam enim cupiditate cum rerum velit eum. Cupiditate aperiam minus odit corporis tempore nam repellendus odio dignissimos veniam accusantium, nulla, inventore, quibusdam exercitationem quisquam nihil. Asperiores officia deserunt, mollitia veniam nemo dolores modi, dolore eaque, nam nulla delectus molestias quo velit illo voluptatibus temporibus nesciunt exercitationem iste consectetur. Facilis reiciendis tempora consectetur cumque neque? Dolore, autem quo. Incidunt facilis consequuntur sapiente commodi, unde, iste quaerat hic nam facere est laborum quos quibusdam debitis nisi magni dicta nemo! Architecto quisquam saepe dolor cumque quos, neque numquam voluptatibus aliquam illum illo error! Minima autem magni placeat, velit vel officia, repellendus labore laboriosam obcaecati quaerat modi similique, rerum veritatis. Sapiente reprehenderit ipsa minima rem, voluptatum quia odit ea, voluptatibus blanditiis ad sunt voluptatem molestias totam explicabo doloribus recusandae. Ipsum est nam magni voluptate eligendi sint quod, dolore ratione, corrupti, natus officia blanditiis laboriosam commodi. Nobis fugiat omnis, dignissimos et libero debitis ea qui eos laudantium placeat nostrum quia maiores earum, voluptatibus eveniet accusamus? Inventore qui atque recusandae eveniet delectus. Vero iste consectetur corporis fugit quibusdam aliquid deserunt dolorum dolor reiciendis accusantium ipsa repellat quisquam, quos aspernatur! Deserunt neque eius at! Repellendus vel animi harum, veritatis voluptatem voluptatum ducimus consectetur accusamus debitis eveniet asperiores corrupti, necessitatibus aliquid, sit aperiam voluptas illum id exercitationem nostrum modi alias sunt? Quibusdam veritatis iure impedit ab. Consequatur, nulla qui dolor dolores error fugit alias nesciunt voluptates dolore illo laborum laboriosam eum cum, nemo suscipit recusandae rerum? Optio laborum nemo voluptate blanditiis suscipit amet. Nesciunt unde animi sapiente facere corrupti sint nulla molestias aspernatur placeat tenetur. Ab dolorem delectus porro excepturi libero, modi laborum esse molestiae quaerat. Maxime iure unde ea, incidunt ratione porro soluta esse, reprehenderit, vitae ab expedita quam. Ea vero veritatis quia ab praesentium temporibus nobis atque accusantium dolorem quibusdam, magnam vel. Vitae veniam obcaecati minima sapiente sint quis voluptates qui quasi. Consequuntur expedita rem architecto facere doloremque ratione dignissimos fugit tempore, nulla cum magnam culpa quo laudantium repudiandae exercitationem iure natus accusantium. Tempora consectetur est quae, hic quasi ut mollitia odio voluptate distinctio libero impedit, dolor, et numquam asperiores facere culpa aliquid quaerat. Consectetur rem amet atque tempora enim expedita sequi facilis nesciunt laudantium at, iste porro! Nisi veniam porro optio labore consequatur aperiam laboriosam voluptates odio. Velit impedit distinctio tenetur! Dignissimos, autem esse! Incidunt architecto libero repellendus aliquid cumque! Numquam magni, tenetur ratione cumque voluptates recusandae amet voluptatibus cum distinctio voluptas dolor. Accusantium, modi iusto doloremque sint consequatur ratione nesciunt itaque, quisquam aspernatur vel nemo eaque repellat? Dolorum at deleniti nihil nesciunt esse magni, libero, vitae voluptate nam fuga ullam saepe omnis consequuntur! Reprehenderit qui ipsum voluptatem cumque ex officiis veritatis iusto, recusandae libero nostrum nemo nobis impedit sapiente maiores soluta doloremque magni eaque perspiciatis. Quis tempore adipisci quae architecto ullam odio incidunt obcaecati, cum consequatur debitis numquam doloribus laborum labore quia officia ratione rerum distinctio accusamus aliquid sed culpa. Ex temporibus molestiae qui cumque alias culpa iure aperiam dolor reprehenderit fuga optio, odit quam dolore? Fuga voluptates illo reiciendis excepturi deserunt? Vel, exercitationem iure iste corrupti eligendi soluta labore non molestias rerum, explicabo iusto inventore repellat dignissimos sit accusamus quos quas ducimus, dolorem tenetur atque minus enim. Voluptas inventore ipsa quam minus quibusdam repellendus, nesciunt, ratione blanditiis earum commodi a consequuntur nam. Illum est labore esse distinctio dignissimos dolorem eaque alias cupiditate ipsum perferendis vero voluptas facilis molestiae laborum impedit, dolores rerum quasi magni et asperiores quis ipsam. Reprehenderit ducimus cupiditate a necessitatibus obcaecati, eum laudantium laboriosam veritatis, aut eveniet dicta accusamus, perspiciatis expedita molestiae corrupti quam vero laborum adipisci suscipit! Dignissimos, blanditiis nemo! Adipisci dignissimos ducimus consequuntur accusantium ut ad magni eos accusamus corporis laboriosam, soluta laborum, ipsa fugit odio deserunt dolorem doloremque assumenda nobis, voluptatum numquam. Placeat sequi facere dolorum vel non rem officia similique aut nisi tempore alias et eius assumenda veniam sapiente dolor ipsam minus quod consectetur autem, numquam culpa! Maxime tempore hic officiis, assumenda nemo id fugiat eius, itaque ullam corrupti placeat possimus ipsa illo quaerat? Quisquam dolores distinctio magnam consequuntur laborum earum, tempora quaerat veritatis dolorum est necessitatibus qui? Error magni voluptate iste eos ex. Eaque earum optio quo laboriosam, omnis in enim impedit nesciunt, ratione harum quisquam eligendi voluptatem aliquid officiis aspernatur alias porro, quis repellat dicta numquam! Sequi, harum voluptates sapiente saepe ducimus inventore ab ipsum asperiores aspernatur, maiores, cumque corrupti quis tempora nisi quos blanditiis porro quas enim maxime rem repellat laboriosam. Architecto, quis aliquam? Inventore voluptas earum at, repudiandae deserunt, iste doloribus eveniet provident incidunt cupiditate, labore et qui. Cumque consequuntur modi architecto aliquam numquam aspernatur facere saepe nulla aliquid facilis laboriosam, amet unde! Distinctio omnis id numquam. Facilis libero quod cupiditate quis minima fugiat dolorum id blanditiis modi voluptatem, qui dolorem ut nulla perspiciatis possimus ab illum asperiores totam. Modi saepe odit dicta dignissimos neque, distinctio animi eum voluptates consectetur facilis quos voluptatum! Laudantium, labore esse porro odio similique perferendis saepe id eaque neque ex eius eum officiis corporis velit quidem aliquid reiciendis ea facilis modi consectetur exercitationem quam voluptatum officia? Similique, architecto deleniti debitis dolores consequatur nostrum? Veritatis perferendis reprehenderit vitae dignissimos nesciunt ab suscipit quisquam! Iure, incidunt dolores aliquid, autem ex hic at, numquam in voluptates debitis itaque quaerat nam eveniet cupiditate iusto deserunt? Error beatae officiis culpa corporis magnam dolor nulla libero. Expedita debitis sed porro officiis, voluptas modi commodi libero itaque, maxime, eum voluptatem nemo? Quasi, nobis id perspiciatis corrupti iusto voluptatibus. Fuga, fugiat consequuntur? Illo maiores, harum voluptates accusamus similique veritatis quod quisquam necessitatibus at. Incidunt quam officiis at ex vero veniam iure, id harum amet porro tenetur cum?</p>
+   <img src="download (24).jpg" alt="" width="100%" height="100%">
+  </main>
+  </div>
+</body>
+</html>
